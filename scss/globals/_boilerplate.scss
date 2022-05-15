@@ -1,0 +1,56 @@
+@use 'mixins' as m;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font: 1rem 'Poppins', sans-serif;
+    background-color: var(--color-wild-sand);
+    color: var(--color-dark);
+}
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+
+}
+
+
+.hide-for-mobile{
+    @include m.breakpoint-down(medium){
+        display:none;
+    }
+}
+
+.hide-for-desktop{
+    @include m.breakpoint-up(large){
+        display:none;
+    }
+}
+
+.overflow{
+    position: fixed;
+    top: 3.6875rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    background-color: var(--color-dark);
+}
