@@ -17,6 +17,10 @@ body{
     font: 1rem 'Poppins', sans-serif;
     background-color: var(--color-wild-sand);
     color: var(--color-dark);
+
+    &.static{
+        overflow: hidden;
+    }
 }
 
 .flex{
@@ -45,12 +49,7 @@ body{
     }
 }
 
-.overflow{
-    position: fixed;
-    top: 3.6875rem;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.7;
-    background-color: var(--color-dark);
+.container{
+    padding-right: 1.0625rem;
+    padding-left: 1.0625rem;
 }
