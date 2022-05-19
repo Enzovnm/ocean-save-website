@@ -1,0 +1,31 @@
+@use 'mixins' as m;;
+
+.slide{
+    position: relative;
+    min-height: 25rem;
+    background-image: url(/images/turtle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+
+    @include m.breakpoint-up(medium){
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(/images/wave.svg);
+        width: 100%;
+        background-size: cover;
+        height: 50%;
+        background-repeat: no-repeat;
+        bottom: -1%;
+        right: 0%;
+        
+        
+        
+    }
+
+}

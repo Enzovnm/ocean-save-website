@@ -48,6 +48,7 @@ body.static {
 }
 
 h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   font-weight: 700;
 }
@@ -97,7 +98,7 @@ a, a:visited, a:active {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(to bottom, #02141b, rgba(0, 0, 0, 0.5803921569), rgba(0, 0, 0, 0.337254902));
+  background-image: linear-gradient(to bottom, rgba(2, 20, 27, 0.8352941176), rgba(0, 0, 0, 0.5803921569), rgba(0, 0, 0, 0.337254902));
 }
 .header nav {
   position: relative;
@@ -243,4 +244,48 @@ a, a:visited, a:active {
 .fade-out {
   -webkit-animation: fade-out 200ms ease-in-out forwards;
           animation: fade-out 200ms ease-in-out forwards;
+}
+
+.slide {
+  position: relative;
+  min-height: 25rem;
+  background-image: url(/images/turtle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 40em) {
+  .slide {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/wave.svg);
+  width: 100%;
+  background-size: cover;
+  height: 50%;
+  background-repeat: no-repeat;
+  bottom: -1%;
+  right: 0%;
+}
+
+.main__text h1 {
+  position: relative;
+  text-align: center;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.main__text h1::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-java-blue);
+  bottom: -0.75rem;
+  width: 16.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
