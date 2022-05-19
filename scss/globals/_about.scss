@@ -1,19 +1,22 @@
 @use 'mixins' as m;
 
+.about{
+    margin-top: 3rem;
 
-.main{
-
-    &__text{
-        p{
-            text-align: justify;   
+    .title{
+        &::after{
+            width: 12rem;
         }
     }
 
+
     @include m.breakpoint-up("large"){
-        display: flex;
         
+        display: flex;
 
         &__text{
+
+            order: 2;
             flex: 4;
 
             h1{
@@ -30,9 +33,9 @@
         }
 
         &__image{
-            
-            flex: 5;   
-            transform: translateY(-10%);
+            order: 1;
+            flex: 5;
+            transform: translateY(-15%);
         }
     }
 }

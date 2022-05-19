@@ -1,5 +1,8 @@
 .header{
-
+    background-color: var(--color-white);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
     &.open{
 
@@ -32,9 +35,11 @@
 
     nav{
         position: relative;
-        background-color: var(--color-white);
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
+        //left: 50%;
+        background-color: var(--color-white);
+        //transform: translateX(-50%);
     }
 
     &__logo, &__logo:active{

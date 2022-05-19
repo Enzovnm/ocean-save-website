@@ -43,17 +43,44 @@ body.static {
 }
 
 .container {
+  max-width: 1200px;
   padding-right: 1.0625rem;
   padding-left: 1.0625rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-java-blue);
+  bottom: -0.1rem;
+  width: 18rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  border-radius: 5px;
 }
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
+  margin-bottom: 2rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
   margin-top: 0;
 }
 
@@ -82,6 +109,12 @@ a, a:visited, a:active {
   --color-white:#ffffff;
 }
 
+.header {
+  background-color: var(--color-white);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 .header.open .header__menu > span:first-child {
   transform: rotate(45deg);
 }
@@ -102,9 +135,9 @@ a, a:visited, a:active {
 }
 .header nav {
   position: relative;
-  background-color: var(--color-white);
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+  background-color: var(--color-white);
 }
 .header__logo, .header__logo:active {
   color: var(--color-dark-grey);
@@ -272,20 +305,59 @@ a, a:visited, a:active {
   right: 0%;
 }
 
-.main__text h1 {
-  position: relative;
-  text-align: center;
-  font-size: 2.2rem;
-  text-transform: uppercase;
+.main__text p {
+  text-align: justify;
 }
-.main__text h1::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-java-blue);
-  bottom: -0.75rem;
-  width: 16.875rem;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  border-radius: 5px;
+@media (min-width: 64em) {
+  .main {
+    display: flex;
+  }
+  .main__text {
+    flex: 4;
+  }
+  .main__text h1 {
+    text-align: left;
+  }
+  .main__text h1::after {
+    left: 0%;
+    transform: translateX(0);
+  }
+  .main__text p {
+    text-align: left;
+  }
+  .main__image {
+    flex: 5;
+    transform: translateY(-10%);
+  }
+}
+
+.about {
+  margin-top: 3rem;
+}
+.about .title::after {
+  width: 12rem;
+}
+@media (min-width: 64em) {
+  .about {
+    display: flex;
+  }
+  .about__text {
+    order: 2;
+    flex: 4;
+  }
+  .about__text h1 {
+    text-align: left;
+  }
+  .about__text h1::after {
+    left: 0%;
+    transform: translateX(0);
+  }
+  .about__text p {
+    text-align: left;
+  }
+  .about__image {
+    order: 1;
+    flex: 5;
+    transform: translateY(-15%);
+  }
 }/*# sourceMappingURL=style.css.map */
