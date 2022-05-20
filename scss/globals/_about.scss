@@ -1,6 +1,13 @@
 @use 'mixins' as m;
 
 .about{
+
+    &__text{
+        p{
+            text-align: justify;   
+        }
+    }
+
     margin-top: 3rem;
 
     .title{
