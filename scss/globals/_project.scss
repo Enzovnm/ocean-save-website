@@ -2,16 +2,12 @@
 
 .project{
 
-    min-height: 40rem;
+
+    position: relative;
     
-    @include m.breakpoint-down("small"){
-        margin-top: 3.125rem;
-    }
-
-
     &__text{
         .title{
-            margin-bottom: 3rem;
+            margin-bottom: 3.5rem;
             &::after{
                 width: 11.25rem;
             }
@@ -82,4 +78,9 @@
             }
         }
     }
+
+
+ 
+
+
 }
