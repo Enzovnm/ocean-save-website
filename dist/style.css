@@ -511,6 +511,34 @@ a, a:visited, a:active {
   opacity: 0.6;
 }
 
+.gallery {
+  padding-bottom: 4rem;
+}
+.gallery__text {
+  padding-bottom: 2rem;
+}
+.gallery__text .title::after {
+  width: 15rem;
+}
+.gallery__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 3rem;
+}
+.gallery__card .card {
+  width: 21.875rem;
+  height: 21.875rem;
+}
+.gallery__card .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .footer {
   padding-top: 3rem;
   height: 12.5rem;
