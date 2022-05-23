@@ -62,6 +62,11 @@ body{
     height: 18rem;
     background-size: cover;
 
+    &:last-of-type{
+        transform: rotate(180deg);
+        height: 20rem;
+    }
+
     @include m.breakpoint-down("small"){
         height: 25vh;
     }

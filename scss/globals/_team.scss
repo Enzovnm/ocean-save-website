@@ -2,20 +2,16 @@
 
 .team{
 
-    color: #fcfcfc;
+    color:var(--color-white);
     padding-bottom: 10rem;
     position: relative;
-    background-color: var(--color-blue-white);
+    background-color: var(--color-blue);
     
     &__text{
-
-        
-
         .title{
-            
             margin-bottom: 5rem;
             &::after{
-                width: 16rem;
+                display: none;
             }
         }
     }
@@ -35,7 +31,7 @@
         
         .card{
             position: relative;
-            background-color: #f3f3f3;
+            background-color: var(--color-wild-sand);
             width: 14rem;
             height: 14rem;
             border-radius: 50%;
@@ -74,7 +70,8 @@
 
                 p{
                     font-size: 0.875rem;
-                    color: var(--color-dark-grey);
+                    
+                    opacity: 0.6;
                 }
             }
 

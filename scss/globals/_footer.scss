@@ -1,0 +1,32 @@
+.footer{
+
+    padding-top: 3rem;
+    height: 12.5rem;
+    background-color: #102736;
+    color: var(--color-white);
+
+    a{
+        color: var(--color-white);
+    }
+
+    &__nav{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.7rem;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+    }
+
+    &__social{
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    h6{
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+}

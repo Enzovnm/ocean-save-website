@@ -55,6 +55,10 @@ body.static {
   height: 18rem;
   background-size: cover;
 }
+.wave:last-of-type {
+  transform: rotate(180deg);
+  height: 20rem;
+}
 @media (max-width: 39.9375em) {
   .wave {
     height: 25vh;
@@ -117,7 +121,6 @@ a, a:visited, a:active {
 
 :root {
   --color-blue: #08aeea;
-  --color-blue-white: #a2d9ff;
   --color-java-blue: #19d2c1;
   --color-spring-green: #2af598;
   --color-java-green: #22e3ad;
@@ -448,16 +451,16 @@ a, a:visited, a:active {
 }
 
 .team {
-  color: #fcfcfc;
+  color: var(--color-white);
   padding-bottom: 10rem;
   position: relative;
-  background-color: var(--color-blue-white);
+  background-color: var(--color-blue);
 }
 .team__text .title {
   margin-bottom: 5rem;
 }
 .team__text .title::after {
-  width: 16rem;
+  display: none;
 }
 .team__cards {
   display: flex;
@@ -473,7 +476,7 @@ a, a:visited, a:active {
 }
 .team__cards .card {
   position: relative;
-  background-color: #f3f3f3;
+  background-color: var(--color-wild-sand);
   width: 14rem;
   height: 14rem;
   border-radius: 50%;
@@ -505,5 +508,33 @@ a, a:visited, a:active {
 }
 .team__cards .card__content p {
   font-size: 0.875rem;
-  color: var(--color-dark-grey);
+  opacity: 0.6;
+}
+
+.footer {
+  padding-top: 3rem;
+  height: 12.5rem;
+  background-color: #102736;
+  color: var(--color-white);
+}
+.footer a {
+  color: var(--color-white);
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.7rem;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.footer__social {
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer h6 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
