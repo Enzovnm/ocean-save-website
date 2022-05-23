@@ -11,3 +11,6 @@ Here are the technologies used in this project.
 * CSS
 * SASS
 * JS
+
+![ocean-save-min](https://user-images.githubusercontent.com/72459340/169748503-aacae24e-4a10-4781-b541-93fa45ee473b.png)
+
