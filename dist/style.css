@@ -50,7 +50,7 @@ body.static {
 }
 
 .wave {
-  background-image: url(~/images/wave-2.svg);
+  background-image: url(../images/wave-2.svg);
   background-repeat: no-repeat;
   height: 18rem;
   background-size: cover;
@@ -303,7 +303,7 @@ a, a:visited, a:active {
 .slide {
   position: relative;
   min-height: 25rem;
-  background-image: url(~/images/turtle.jpg);
+  background-image: url(../images/turtle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -317,7 +317,7 @@ a, a:visited, a:active {
 .slide::before {
   content: "";
   position: absolute;
-  background-image: url(~/images/wave.svg);
+  background-image: url(../images/wave.svg);
   width: 100%;
   background-size: cover;
   height: 50%;
