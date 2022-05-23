@@ -3,7 +3,7 @@
 .slide{
     position: relative;
     min-height: 25rem;
-    background-image: url(images/turtle.jpg);
+    background-image: url(~/images/turtle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -16,7 +16,7 @@
     &::before{
         content: '';
         position: absolute;
-        background-image: url(images/wave.svg);
+        background-image: url(~/images/wave.svg);
         width: 100%;
         background-size: cover;
         height: 50%;
